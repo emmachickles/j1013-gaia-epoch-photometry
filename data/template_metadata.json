@@ -1,0 +1,7 @@
+{
+  "phase_conjunction": 0.009185776182355172,
+  "period_phase_units": 1.0,
+  "original_model_file": "results/lcurve/good/good.mod",
+  "original_template_file": "results/lcurve/good/good_model_g.dat",
+  "description": "Saved g-band LCURVE model; phase origin from t0 in good.mod. This notebook does not refit its physical geometry."
+}

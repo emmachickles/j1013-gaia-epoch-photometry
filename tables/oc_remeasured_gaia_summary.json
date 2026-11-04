@@ -1,0 +1,14 @@
+{
+  "pdot_s_per_s": -1.651203301012667e-12,
+  "conditional_formal_sigma_s_per_s": 7.308098657680747e-14,
+  "status": "Illustrative joint fit with new conditional Gaia timings; not the published result",
+  "phase_reference": "Non-Gaia quadratic ephemeris",
+  "gaia_response_assumption_s": 44,
+  "unresolved_systematics": [
+    "Gaia stored time scale",
+    "g-to-G template transfer",
+    "half-cycle labeling",
+    "correlated measurements",
+    "external intra-season ephemeris uncertainty"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "pdot_s_per_s": -1.725120949776742e-12,
+  "formal_sigma_s_per_s": 5.5987215068592036e-14,
+  "chi2": 6.248443977507781,
+  "dof": 12,
+  "reference_period_s": 513.5933003165533,
+  "reference_time_as_stored_days": 60033.2044883359,
+  "published_pdot_s_per_s": -1.6e-12,
+  "published_sigma_s_per_s": 7e-14,
+  "fit_version": "Backed-up timing table refit; distinct from the published result"
+}

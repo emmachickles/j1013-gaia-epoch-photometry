@@ -1,0 +1,27 @@
+[
+  {
+    "file": "data/gaia.dat",
+    "sha256": "e35eb01832b8cbfca1765be7de08d204628b44dc0f17d3c1961bc4d5e33f5e7a",
+    "original_analysis_file": "data/gaia/gaia.dat"
+  },
+  {
+    "file": "data/gaia_dr3.json",
+    "sha256": "70971b753de98fc990ef999682c1a64836e041924bf97ca524efffc28c040deb",
+    "original_analysis_file": "data/gaia/gaia_dr3.json"
+  },
+  {
+    "file": "data/atlas_reduced_original.txt",
+    "sha256": "0c581c22c0a24e434bdba3e7a5caed7bcfb8b14c298288e507986e128273fb51",
+    "original_analysis_file": "data/atlas/reduced.txt"
+  },
+  {
+    "file": "data/timing1013_original.txt",
+    "sha256": "5fb2593a11c0acb1d796e1b545aa8ba4dde16e3d50fdf08b63be440b033db1b4",
+    "original_analysis_file": "results/pdot/timing1013.csv"
+  },
+  {
+    "file": "data/ultracam_g_lcurve_template.dat",
+    "sha256": "c5cbd9ae04cd11a7418fc524f22775b85148d58d813efc163b4616430d76663d",
+    "original_analysis_file": "results/lcurve/good/good_model_g.dat"
+  }
+]

@@ -1,0 +1,11 @@
+Scientific verification, 2026-11-04
+
+All notebook cells execute using only bundled science inputs.
+Input checksums verified. Original source files preserved.
+Gaia/ATLAS 50-bin values match the original source notebook to 2.3e-16 absolute precision.
+Stored-table O-C is consistent with reconstructed integer cycles.
+Stored-table Pdot and formal error reproduce the original notebook values.
+New timing estimator recovers an injected 7.25-second shift at the actual cadence to <0.005 s.
+Gaia seasonal fits, asymmetric profiles, smearing and harmonic-baseline sensitivities exported.
+New O-C uses 12 non-Gaia rows plus 3 flux-derived Gaia rows; stored Gaia rows are comparison only.
+Figures visually inspected. Scientific limitations are documented in the README and notebook.

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the published paper for the binary and the repository for this notebook; distinguish its new exploratory timings from the paper's result."
+title: "Gaia epoch photometry of ATLAS J1013-4516"
+type: software
+version: 0.1.0
+date-released: 2026-11-04
+authors:
+  - family-names: Chickles
+    given-names: Emma T.
+repository-code: "https://github.com/emmachickles/j1013-gaia-epoch-photometry"
+url: "https://github.com/emmachickles/j1013-gaia-epoch-photometry"
+license: MIT
+references:
+  - type: article
+    title: "An Eclipsing 8.56 Minutes Orbital Period Mass-transferring Binary"
+    authors:
+      - family-names: Chickles
+        given-names: Emma T.
+    year: 2026
+    journal: "The Astrophysical Journal"
+    volume: 1000
+    start: 237
+    doi: "10.3847/1538-4357/ae4871"
