@@ -18,6 +18,6 @@ references:
         given-names: Emma T.
     year: 2026
     journal: "The Astrophysical Journal"
-    volume: 1000
-    start: 237
+    volume: "1000"
+    start: "237"
     doi: "10.3847/1538-4357/ae4871"

@@ -1,36 +1,38 @@
 # Gaia epoch photometry of ATLAS J1013−4516
 
-A runnable Jupyter notebook with the Gaia and ATLAS light curves, timing data, figures, and a new seasonal Gaia timing estimator for the 8.56-minute eclipsing binary ATLAS J1013−4516. Prepared for the MIT Gaia DR4 Warm Up Workshop, November 5–6, 2026.
+Light curves, timing data, and a Jupyter notebook for the 8.56-minute eclipsing binary ATLAS J1013−4516. Prepared for the MIT Gaia DR4 Warm Up Workshop, November 5–6, 2026.
 
-**[Open the executed notebook](j1013_gaia_figures.ipynb).** All science inputs are bundled; Run All works offline. No Box account, original analysis repository, GPU, or LCURVE executable is required.
+**[Open the executed notebook](j1013_gaia_figures.ipynb)** to view the light curves, measure seasonal Gaia timings, and construct observed-minus-calculated (O–C) diagrams. Input data are included in `data/`.
 
 ![Gaia and ATLAS fold](figures/j1013_gaia_atlas_fold.png)
 
-## What it does
+## Analysis
 
-- Displays 54 processed Gaia epoch-photometry measurements.
-- Cleans the 2,128-row ATLAS input using the source analysis recipe (1,946 rows retained), folds both surveys on the published ephemeris, and exports the 50-bin curves.
-- Provides all 15 stored timing epochs and a separate 12-row non-Gaia timing table, with source-row IDs and documented instrument assignments.
-- Reproduces the backed-up timing-table O–C fit.
-- **Measures three new Gaia seasonal timings directly from the individual fluxes** (20/19/15 points), using a saved high-speed g-band LCURVE template, free seasonal shifts, and a phase evolution fitted to non-Gaia timings only.
-- Exports profile-likelihood diagnostics, zero-versus-44-second averaging and harmonic-baseline sensitivities, and an O–C using the newly measured Gaia epochs.
+The notebook contains 54 processed Gaia measurements, ATLAS photometry, a high-speed g-band light-curve template, and 15 timing epochs. It:
 
-## Scientific status
+- Applies the original ATLAS cleaning and phase-folding recipe and exports the 50-bin Gaia/ATLAS comparison.
+- Fits a quadratic ephemeris to the supplied timing table.
+- Remeasures Gaia timings in three seasons containing 20, 19, and 15 measurements, with free seasonal shifts relative to an ephemeris fitted to the 12 non-Gaia epochs.
+- Examines profile likelihoods, exposure averaging, and waveform sensitivity, then constructs an O–C using the remeasured Gaia epochs.
 
-The published result is **Pdot = (−1.60 ± 0.07) × 10⁻¹² s/s**, from [Chickles et al. (2026), ApJ 1000, 237](https://doi.org/10.3847/1538-4357/ae4871). This repository separates it from two other calculations:
+## Interpretation
 
-| Calculation | Result / status |
+The published period derivative is **Pdot = (−1.60 ± 0.07) × 10⁻¹² s/s** ([Chickles et al. 2026](https://doi.org/10.3847/1538-4357/ae4871)). The notebook distinguishes this from:
+
+| Calculation | Pdot (10⁻¹² s/s) |
 |---|---|
-| Refit of the stored 15-row timing table | (−1.725 ± 0.056) × 10⁻¹² s/s; the source table/fit version differs from the paper's quoted result. |
-| New flux-based Gaia epochs plus the other timings | Approximately (−1.65 ± 0.07) × 10⁻¹² s/s, with a **conditional formal error**. An exploratory remeasurement, not a validated replacement for the published analysis. |
+| Fit to the supplied timing table | −1.725 ± 0.056 |
+| Fit using remeasured Gaia epochs | −1.65 ± 0.07, conditional formal uncertainty |
 
-**The fixed g-to-G template fits the Gaia seasons poorly** (reduced chi-square about 16–34). The notebook inflates local profile errors using residual scatter, but this does not calibrate template systematics. Allowing an extra harmonic baseline switches the preferred eclipse labeling by about half a cycle in two seasons. The supplied Gaia file has no header, original quality flags, or verified ingestion/time-scale record; times are used as stored. The 44-second boxcar is a response assumption checked against zero extra averaging. Two nearly simultaneous input rows cannot be checked for independence without transit IDs. These limitations are exposed in the notebook and sensitivity table; the apparent agreement of the new Pdot with the paper does not establish exact reproduction.
+The difference between the supplied-table fit and the published value remains unresolved. The phase-folded comparison uses the published ephemeris.
 
-The original Gaia download, initial filtering, and original three-season timing procedure were not recovered. The new estimator is fully specified here. The saved physical-template table is an input; this notebook does not reproduce its original physical-model fit or raw-image reductions.
+**The Gaia remeasurements are exploratory.** The transferred g-band template fits poorly (reduced χ² ≈ 16–34), and allowing an additional harmonic baseline changes the preferred eclipse labeling by about half a cycle in two seasons. Residual-scaled profile errors describe the local fit; they do not capture these waveform uncertainties.
+
+The processed Gaia file lacks the original quality flags and a verified time-scale conversion record. Times are used as supplied. The nominal 44-second boxcar response is an assumption, with zero additional averaging tested as a sensitivity check. These issues, the nearly simultaneous pair of measurements, and the unpropagated uncertainty in within-season phase evolution are discussed alongside the timing fits. Agreement with the published Pdot does not validate the remeasurement procedure.
 
 ## Run
 
-Use Python 3.12 (tested):
+Tested with Python 3.12:
 
 ```bash
 python -m venv .venv
@@ -39,34 +41,34 @@ python -m pip install -r requirements.txt
 jupyter lab j1013_gaia_figures.ipynb
 ```
 
-Or execute every cell non-interactively in the active Python environment:
+To execute all cells from the command line:
 
 ```bash
 python scripts/run_notebook.py
 ```
 
-All input files live in `data/`. Run All regenerates PDF/PNG figures in `figures/` and CSV/JSON products in `tables/`. It does not modify input data. `data/source_manifest.json` records original analysis-relative filenames and SHA256 checksums. Absolute workstation and private backup paths are not included.
+Run All regenerates PDF/PNG figures in `figures/` and CSV/JSON products in `tables/`. Original input filenames and SHA256 checksums are recorded in `data/source_manifest.json`.
 
 ## Main products
 
 | Product | File |
 |---|---|
-| Gaia + ATLAS fold | `figures/j1013_gaia_atlas_fold.pdf` |
-| New Gaia timing profiles | `figures/j1013_gaia_timing_profiles.pdf` |
-| O–C with new Gaia measurements | `figures/j1013_oc_remeasured_gaia.pdf` |
-| Measured Gaia epochs | `tables/gaia_measured_timing_epochs.csv` |
-| Model/response sensitivities | `tables/gaia_timing_sensitivity.csv` |
+| Gaia/ATLAS fold | `figures/j1013_gaia_atlas_fold.pdf` |
+| Gaia timing profiles | `figures/j1013_gaia_timing_profiles.pdf` |
+| O–C with remeasured Gaia epochs | `figures/j1013_oc_remeasured_gaia.pdf` |
+| Remeasured Gaia epochs | `tables/gaia_measured_timing_epochs.csv` |
+| Timing sensitivities | `tables/gaia_timing_sensitivity.csv` |
 | Folded light curves | `tables/gaia_atlas_folded_50bins.csv` |
 | Non-Gaia timing input | `data/other_timing_epochs.csv` |
 
-Instrument labels in the original headerless timing table were reconstructed from source figure annotations and observing-era grouping. Its last column is reciprocal timing uncertainty, not an O–C error; the notebook uses the supplied seconds-unit error column. Its day-unit errors were rounded. The ATLAS/Gaia overlay uses an affine rescaling of ATLAS to Gaia's folded interquartile range and is not an absolute amplitude/color comparison. Three displayed cycles repeat the same measurements.
+The notebook documents the reconstructed instrument labels and timing-error columns. The Gaia/ATLAS overlay rescales ATLAS fluxes to Gaia's folded interquartile range; it compares waveform shapes rather than absolute amplitudes. The three plotted cycles repeat the same data.
 
 ## Citation and attribution
 
-For the binary and published scientific result, cite:
+For the binary and published result, cite:
 
 > Chickles, E. T., Chakraborty, J., Burdge, K. B., et al. 2026, “An Eclipsing 8.56 Minutes Orbital Period Mass-transferring Binary,” The Astrophysical Journal, 1000, 237. DOI: [10.3847/1538-4357/ae4871](https://doi.org/10.3847/1538-4357/ae4871).
 
-This work uses data from ESA's Gaia mission, processed by the Gaia Data Processing and Analysis Consortium (DPAC). DPAC funding is provided by national institutions, especially those participating in the Gaia Multilateral Agreement. See [Gaia](https://www.cosmos.esa.int/gaia) and [DPAC](https://www.cosmos.esa.int/web/gaia/dpac/consortium). ATLAS survey photometry and the author's processed high-speed/timing products are included for reproducibility of this specific analysis.
+This work uses data from ESA's [Gaia mission](https://www.cosmos.esa.int/gaia), processed by the [Gaia Data Processing and Analysis Consortium (DPAC)](https://www.cosmos.esa.int/web/gaia/dpac/consortium). DPAC funding is provided by national institutions, especially those participating in the Gaia Multilateral Agreement. ATLAS survey photometry and author-provided high-speed and timing products support the analysis.
 
-Source code and notebook code cells: [MIT License](LICENSE). Author-created data products, notebook prose, and figures: [CC BY 4.0](LICENSE-DATA). Upstream Gaia/ATLAS data retain their applicable terms and attribution requirements. `CITATION.cff` supplies repository citation metadata.
+Code: [MIT License](LICENSE). Author-created data products, prose, and figures: [CC BY 4.0](LICENSE-DATA). Upstream Gaia/ATLAS data retain their applicable terms and attribution requirements. Repository citation metadata are in `CITATION.cff`.

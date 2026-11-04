@@ -7,5 +7,5 @@
   "reference_time_as_stored_days": 60033.2044883359,
   "published_pdot_s_per_s": -1.6e-12,
   "published_sigma_s_per_s": 7e-14,
-  "fit_version": "Backed-up timing table refit; distinct from the published result"
+  "fit_version": "Supplied timing-table fit; distinct from the published result"
 }
