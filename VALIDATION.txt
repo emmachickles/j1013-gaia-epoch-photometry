@@ -1,12 +1,18 @@
-Execution and numerical checks (2026-11-04)
+Execution and numerical checks (2026-11-05)
 
-All notebook cells execute with the included inputs, whose checksums are verified.
-The 50-bin light curves reproduce the source notebook's numerical outputs.
-The supplied O-C values agree with reconstructed integer cycles.
-The supplied-table fit reproduces the source notebook's Pdot and formal error.
-At the Gaia cadence, a synthetic 7.25-second shift is recovered to within 0.005 s.
-The remeasured-Gaia O-C uses 12 non-Gaia epochs and three flux-derived Gaia epochs.
-Figures are visually checked.
+All notebook cells execute with the included inputs; input checksums are verified.
+The 50-bin light curves reproduce the original numerical outputs.
+Non-Gaia O-C values agree with reconstructed integer cycles.
+At the Gaia cadence, a synthetic 7.25-second shift is recovered within 0.005 s.
+Before/after fits use the same integer-cycle quadratic model and full covariance propagation.
+The input directory contains 12 non-Gaia timings and no supplied Gaia timing rows.
+Three seasonal Gaia epochs are measured from the 54 stored photometric points.
+Both O-C panels and the period-derivative comparison were visually checked.
+
+Without Gaia: Pdot = -1.7281801407e-12 +/- 1.6774847808e-13 s/s.
+With flux-derived Gaia: Pdot = -1.6503061442e-12 +/- 7.3396769416e-14 s/s.
+Formal uncertainty improvement: 2.2855 times, conditional on the stated assumptions.
 
 These checks verify execution and numerical consistency, not the scientific adequacy
-of the timing model. The notebook documents poor template fits and model sensitivity.
+of the timing model. The notebook documents poor template fits, model sensitivity,
+and unpropagated uncertainty/correlation from the non-Gaia within-season ephemeris.

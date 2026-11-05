@@ -8,12 +8,12 @@ Light curves, timing data, and a Jupyter notebook for the 8.56-minute eclipsing 
 
 ## Analysis
 
-The notebook contains 54 processed Gaia measurements, ATLAS photometry, a high-speed g-band light-curve template, and 15 timing epochs. It:
+The notebook contains 54 processed Gaia measurements, ATLAS photometry, a high-speed g-band light-curve template, and 12 non-Gaia timing epochs. It:
 
 - Applies the original ATLAS cleaning and phase-folding recipe and exports the 50-bin Gaia/ATLAS comparison.
-- Fits a quadratic ephemeris to the supplied timing table.
+- Introduces Gaia epoch photometry, prior applications and the expected DR4 products.
 - Remeasures Gaia timings in three seasons containing 20, 19, and 15 measurements, with free seasonal shifts relative to an ephemeris fitted to the 12 non-Gaia epochs.
-- Examines profile likelihoods, exposure averaging, and waveform sensitivity, then constructs an O–C using the remeasured Gaia epochs.
+- Examines profile likelihoods, exposure averaging, and waveform sensitivity, then compares O–C diagrams and conditional period-derivative uncertainties before and after adding the new Gaia timings.
 
 ## Run
 
@@ -43,3 +43,5 @@ For the binary and published result, cite:
 This work uses data from ESA's [Gaia mission](https://www.cosmos.esa.int/gaia), processed by the [Gaia Data Processing and Analysis Consortium (DPAC)](https://www.cosmos.esa.int/web/gaia/dpac/consortium). DPAC funding is provided by national institutions, especially those participating in the Gaia Multilateral Agreement. ATLAS survey photometry and author-provided high-speed and timing products support the analysis.
 
 Code: [MIT License](LICENSE). Author-created data products, prose, and figures: [CC BY 4.0](LICENSE-DATA). Upstream Gaia/ATLAS data retain their applicable terms and attribution requirements. Repository citation metadata are in `CITATION.cff`.
+
+Literature figure attribution: [Chakraborty et al. (2024), Figure 4](figures/literature/ATTRIBUTION.md).

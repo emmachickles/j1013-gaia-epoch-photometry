@@ -15,13 +15,13 @@
     "original_analysis_file": "data/atlas/reduced.txt"
   },
   {
-    "file": "data/timing1013_original.txt",
-    "sha256": "5fb2593a11c0acb1d796e1b545aa8ba4dde16e3d50fdf08b63be440b033db1b4",
-    "original_analysis_file": "results/pdot/timing1013.csv"
-  },
-  {
     "file": "data/ultracam_g_lcurve_template.dat",
     "sha256": "c5cbd9ae04cd11a7418fc524f22775b85148d58d813efc163b4616430d76663d",
     "original_analysis_file": "results/lcurve/good/good_model_g.dat"
+  },
+  {
+    "file": "data/other_timing_epochs.csv",
+    "sha256": "068e78a797693e757d0d2470260707a38a01e4ed712592b679364bfb65d85d14",
+    "original_analysis_file": "results/pdot/timing1013.csv (non-Gaia rows only)"
   }
 ]

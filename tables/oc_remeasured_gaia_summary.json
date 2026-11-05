@@ -1,11 +1,28 @@
 {
-  "pdot_s_per_s": -1.651203301012667e-12,
-  "conditional_formal_sigma_s_per_s": 7.308098657680747e-14,
-  "status": "Illustrative joint fit with new conditional Gaia timings; not the published result",
-  "phase_reference": "Non-Gaia quadratic ephemeris",
+  "comparison": [
+    {
+      "dataset": "Without Gaia",
+      "n_epochs": 12,
+      "pdot_s_per_s": -1.7281801407036633e-12,
+      "conditional_sigma_s_per_s": 1.6774847807649666e-13,
+      "chi2": 3.9602445489376477,
+      "dof": 9
+    },
+    {
+      "dataset": "With flux-derived Gaia",
+      "n_epochs": 15,
+      "pdot_s_per_s": -1.6503061441898245e-12,
+      "conditional_sigma_s_per_s": 7.33967694159145e-14,
+      "chi2": 8.348711413163096,
+      "dof": 12
+    }
+  ],
+  "formal_error_improvement_factor": 2.285502201410571,
+  "status": "Exploratory; formal errors conditional on timing and template assumptions",
   "gaia_response_assumption_s": 44,
+  "gaia_reporting_cycle": "Inverse-variance-weighted observing-cycle centre",
   "unresolved_systematics": [
-    "Gaia stored time scale",
+    "Stored Gaia time scale",
     "g-to-G template transfer",
     "half-cycle labeling",
     "correlated measurements",
