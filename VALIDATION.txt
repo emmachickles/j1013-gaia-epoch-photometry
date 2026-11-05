@@ -31,3 +31,7 @@ Plot filtering, catalogue ephemerides and local WD period refinements are explic
 Native Gaia TCB-to-TDB conversion is demonstrated, without changing J1013 times.
 J1013 before/after Pdot values remain unchanged.
 All cells execute and the new figures were visually checked.
+
+Evans Figure 1 replaces the computed Andromeda zoom. The original arXiv
+figure image is included unchanged, credited and checksummed. The all-sky
+colour bar is attached to the all-sky panel only. Combined layout visually checked.

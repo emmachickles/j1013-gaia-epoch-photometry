@@ -7,3 +7,6 @@ ApJ 1000, 237, DOI 10.3847/1538-4357/ae4871, and identify modifications.
 New exploratory timing measurements must not be attributed to the published paper.
 Upstream Gaia and ATLAS data retain their applicable terms and attribution requirements.
 See the README for mission/survey acknowledgments and the notebook for provenance.
+
+Exception: the unchanged Evans et al. Figure 1 image retains its CC BY-NC-ND 4.0
+license from the arXiv version. See figures/literature/ATTRIBUTION.md.

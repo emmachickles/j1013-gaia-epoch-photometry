@@ -83,5 +83,10 @@
     "file": "data/examples/1107980654748582144.csv",
     "sha256": "c005f617a8f03cddba82d20ece5ac192b3e45b7053e3383f29cb2d5604017650",
     "original_analysis_file": "Gaia DR3 DataLink DATAMODEL_STANDARD response; all rows retained"
+  },
+  {
+    "file": "figures/literature/evans2023_gaps_fig1.png",
+    "sha256": "1e8be429d52e9158b4cbd506de3ab9aa886b4f965827a4a47a0d24841beec91f",
+    "original_analysis_file": "Evans et al. (2023), Figure 1; https://arxiv.org/html/2206.05591v1/figs/GAPSAll.png"
   }
 ]
