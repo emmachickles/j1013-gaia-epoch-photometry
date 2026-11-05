@@ -1,8 +1,9 @@
 # Gaia epoch photometry of ATLAS J1013−4516
 
-Light curves, timing data, and a Jupyter notebook for the 8.56-minute eclipsing binary ATLAS J1013−4516. Prepared for the MIT Gaia DR4 Warm Up Workshop, November 5–6, 2026.
+- Light curves, timing data, and a Jupyter notebook for the 8.56-minute eclipsing binary ATLAS J1013−4516.
+- Prepared for the MIT Gaia DR4 Warm Up Workshop, November 5–6, 2026.
 
-**[Open the executed notebook](j1013_gaia_figures.ipynb)** to view the light curves, measure seasonal Gaia timings, and construct observed-minus-calculated (O–C) diagrams. Input data are included in `data/`.
+- **[Open the executed notebook](j1013_gaia_figures.ipynb)** to view the light curves, measure seasonal Gaia timings, and construct observed-minus-calculated (O–C) diagrams. Input data are included in `data/`.
 
 ![Gaia and ATLAS fold](figures/j1013_gaia_atlas_fold.png)
 
@@ -43,5 +44,3 @@ For the binary and published result, cite:
 This work uses data from ESA's [Gaia mission](https://www.cosmos.esa.int/gaia), processed by the [Gaia Data Processing and Analysis Consortium (DPAC)](https://www.cosmos.esa.int/web/gaia/dpac/consortium). DPAC funding is provided by national institutions, especially those participating in the Gaia Multilateral Agreement. ATLAS survey photometry and author-provided high-speed and timing products support the analysis.
 
 Code: [MIT License](LICENSE). Author-created data products, prose, and figures: [CC BY 4.0](LICENSE-DATA). Upstream Gaia/ATLAS data retain their applicable terms and attribution requirements. Repository citation metadata are in `CITATION.cff`.
-
-Literature figure attribution: [Chakraborty et al. (2024), Figure 4](figures/literature/ATTRIBUTION.md).
