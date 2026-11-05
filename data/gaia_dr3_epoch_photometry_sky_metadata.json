@@ -1,0 +1,12 @@
+{
+  "retrieved_utc": "2026-11-05",
+  "endpoint": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "query_file": "data/gaia_dr3_epoch_photometry_sky_query.adql",
+  "n_sources": 11754237,
+  "n_andromeda": 1257319,
+  "healpix_order": 6,
+  "nside": 64,
+  "ordering": "nested",
+  "frame": "ICRS",
+  "description": "All sources with has_epoch_photometry=true; no magnitude or quality cuts. Counts grouped by HEALPix and in_andromeda_survey. Counts refer to sources, not individual flux measurements."
+}

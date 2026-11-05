@@ -1,0 +1,5 @@
+SELECT GAIA_HEALPIX_INDEX(6, source_id) AS healpix6, COUNT(*) AS n_sources,
+in_andromeda_survey
+FROM gaiadr3.gaia_source
+WHERE has_epoch_photometry = 'true'
+GROUP BY healpix6, in_andromeda_survey

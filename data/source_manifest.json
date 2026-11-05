@@ -23,5 +23,10 @@
     "file": "data/other_timing_epochs.csv",
     "sha256": "068e78a797693e757d0d2470260707a38a01e4ed712592b679364bfb65d85d14",
     "original_analysis_file": "results/pdot/timing1013.csv (non-Gaia rows only)"
+  },
+  {
+    "file": "data/gaia_dr3_epoch_photometry_healpix6.csv",
+    "sha256": "fa47202c1111e8f155a5dab946cb0f9e19f55a7ff15b7d5085b17a2395fe686c",
+    "original_analysis_file": "Gaia DR3 archive aggregate; see sky query and metadata"
   }
 ]

@@ -16,3 +16,8 @@ Formal uncertainty improvement: 2.2855 times, conditional on the stated assumpti
 These checks verify execution and numerical consistency, not the scientific adequacy
 of the timing model. The notebook documents poor template fits, model sensitivity,
 and unpropagated uncertainty/correlation from the non-Gaia within-season ephemeris.
+
+All-sky map: archive aggregate sums to 11,754,237 sources, of which 1,257,319
+are flagged in_andromeda_survey. Equal-area HEALPix counts are converted to
+sources per square degree; Mollweide projection and M31 zoom visually checked.
+The notebook executes offline using the bundled aggregate and records its query.

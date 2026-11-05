@@ -7,3 +7,4 @@ jupyterlab>=4.0
 nbclient>=0.10
 nbformat>=5.9
 ipykernel>=6.0
+astropy-healpix>=1.0

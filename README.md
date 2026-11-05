@@ -12,7 +12,7 @@
 The notebook contains 54 processed Gaia measurements, ATLAS photometry, a high-speed g-band light-curve template, and 12 non-Gaia timing epochs. It:
 
 - Applies the original ATLAS cleaning and phase-folding recipe and exports the 50-bin Gaia/ATLAS comparison.
-- Introduces Gaia epoch photometry, prior applications and the expected DR4 products.
+- Maps all 11,754,237 DR3 epoch-photometry sources, highlighting the Andromeda survey, and introduces prior applications and expected DR4 products.
 - Remeasures Gaia timings in three seasons containing 20, 19, and 15 measurements, with free seasonal shifts relative to an ephemeris fitted to the 12 non-Gaia epochs.
 - Examines profile likelihoods, exposure averaging, and waveform sensitivity, then compares O–C diagrams and conditional period-derivative uncertainties before and after adding the new Gaia timings.
 
