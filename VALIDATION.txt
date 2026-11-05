@@ -21,3 +21,13 @@ All-sky map: archive aggregate sums to 11,754,237 sources, of which 1,257,319
 are flagged in_andromeda_survey. Equal-area HEALPix counts are converted to
 sources per square degree; Mollweide projection and M31 zoom visually checked.
 The notebook executes offline using the bundled aggregate and records its query.
+
+Additional characterization and light-curve gallery (2026-11-05):
+All five histogram aggregates sum to the full 11,754,237-source selection.
+GAPS and non-GAPS counts are 1,257,319 and 10,496,918 in each aggregate.
+Missing summary values and zero selected counts remain separately tabulated.
+Six gallery downloads retain the original source/transit IDs and rejection flags.
+Plot filtering, catalogue ephemerides and local WD period refinements are explicit.
+Native Gaia TCB-to-TDB conversion is demonstrated, without changing J1013 times.
+J1013 before/after Pdot values remain unchanged.
+All cells execute and the new figures were visually checked.

@@ -1,0 +1,9 @@
+{
+  "retrieved_utc": "2026-11-05",
+  "endpoint": "https://gea.esac.esa.int/tap-server/tap",
+  "selection": "gaia_source.has_epoch_photometry=true; join vari_summary",
+  "n_sources": 11754237,
+  "epoch_count_definition": "num_selected_*: FoV transits retained for variability analysis, not raw CCD or total downloaded-row counts",
+  "baseline_bin_width_days": 25,
+  "magnitude_bin_width_mag": 0.5
+}

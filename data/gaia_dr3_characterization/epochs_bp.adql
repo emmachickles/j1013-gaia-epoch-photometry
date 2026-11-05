@@ -1,0 +1,1 @@
+SELECT v.num_selected_bp AS bin_value, g.in_andromeda_survey, COUNT(*) AS n_sources FROM gaiadr3.vari_summary AS v JOIN gaiadr3.gaia_source AS g ON v.source_id=g.source_id WHERE g.has_epoch_photometry='true' GROUP BY v.num_selected_bp, g.in_andromeda_survey

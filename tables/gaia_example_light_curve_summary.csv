@@ -1,0 +1,11 @@
+key,source_id,band,n_selected,period_days,period_method
+rrlyrae,3470927899858715008,g,30,0.4769632127584515,Gaia SOS catalogue; TCB
+rrlyrae,3470927899858715008,bp,30,0.4769632127584515,Gaia SOS catalogue; TCB
+rrlyrae,3470927899858715008,rp,30,0.4769632127584515,Gaia SOS catalogue; TCB
+cepheid,2003938801532007808,g,45,4.983511336273528,Gaia SOS catalogue; TCB
+cepheid,2003938801532007808,bp,51,4.983511336273528,Gaia SOS catalogue; TCB
+cepheid,2003938801532007808,rp,51,4.983511336273528,Gaia SOS catalogue; TCB
+young,377735437313823104,g,38,,No periodic model
+wd_pulsator,2026653131220381824,g,79,0.0029631874660487538,Local weighted sinusoid search ±0.05 s about Steen et al. period; TDB
+wd_rotation,4613612951211823104,g,46,0.0083921330927076,Local weighted sinusoid search ±0.05 s about Steen et al. period; TDB
+planet,1107980654748582144,g,131,3.6915224,Panahi et al. circular ephemeris; BJD interpreted as TDB

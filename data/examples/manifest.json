@@ -1,0 +1,74 @@
+{
+  "retrieved_utc": "2026-11-05",
+  "endpoint": "https://gea.esac.esa.int/data-server/data",
+  "request": {
+    "RETRIEVAL_TYPE": "EPOCH_PHOTOMETRY",
+    "RELEASE": "Gaia DR3",
+    "FORMAT": "csv",
+    "DATA_STRUCTURE": "DATAMODEL_STANDARD",
+    "VALID_DATA": "false"
+  },
+  "examples": [
+    {
+      "key": "rrlyrae",
+      "source_id": "3470927899858715008",
+      "label": "RR Lyrae \u00b7 fundamental mode",
+      "period_days": 0.4769632127584515,
+      "epoch_offset_days": 1695.9199086641906,
+      "fold_scale": "tcb",
+      "reference": "https://doi.org/10.1051/0004-6361/202243964",
+      "file": "data/examples/3470927899858715008.csv"
+    },
+    {
+      "key": "cepheid",
+      "source_id": "2003938801532007808",
+      "label": "Cepheid",
+      "period_days": 4.983511336273528,
+      "epoch_offset_days": 1684.0901820116158,
+      "fold_scale": "tcb",
+      "reference": "https://doi.org/10.1051/0004-6361/202243990",
+      "file": "data/examples/2003938801532007808.csv"
+    },
+    {
+      "key": "young",
+      "source_id": "377735437313823104",
+      "label": "GAPS \u00b7 young-star candidate",
+      "in_andromeda_survey": true,
+      "best_class_name": "YSO",
+      "best_class_score": 0.690783,
+      "reference": "Gaia DR3 vari_classifier_result; not spectroscopically confirmed",
+      "file": "data/examples/377735437313823104.csv"
+    },
+    {
+      "key": "wd_pulsator",
+      "source_id": "2026653131220381824",
+      "label": "Pulsating WD \u00b7 J1952+2509",
+      "period_seed_seconds": 255.99600000000004,
+      "fold_scale": "tdb",
+      "reference": "https://doi.org/10.3847/1538-4357/ad3e60",
+      "classification": "Known DAV in Steen et al. Table 2",
+      "file": "data/examples/2026653131220381824.csv"
+    },
+    {
+      "key": "wd_rotation",
+      "source_id": "4613612951211823104",
+      "label": "Magnetic WD \u00b7 J0317\u22128532",
+      "period_seed_seconds": 725.0364,
+      "fold_scale": "tdb",
+      "reference": "https://doi.org/10.3847/1538-4357/ad3e60",
+      "classification": "Known Spot in Steen et al. Table 2",
+      "file": "data/examples/4613612951211823104.csv"
+    },
+    {
+      "key": "planet",
+      "source_id": "1107980654748582144",
+      "label": "Gaia-2b \u00b7 transiting hot Jupiter",
+      "period_days": 3.6915224,
+      "epoch_offset_days": 3646.48875,
+      "fold_scale": "tdb",
+      "reference": "https://doi.org/10.1051/0004-6361/202243497",
+      "ephemeris": "Panahi et al. Table 4 circular solution; BJD interpreted as TDB for Gaia/TESS comparison",
+      "file": "data/examples/1107980654748582144.csv"
+    }
+  ]
+}

@@ -28,5 +28,60 @@
     "file": "data/gaia_dr3_epoch_photometry_healpix6.csv",
     "sha256": "fa47202c1111e8f155a5dab946cb0f9e19f55a7ff15b7d5085b17a2395fe686c",
     "original_analysis_file": "Gaia DR3 archive aggregate; see sky query and metadata"
+  },
+  {
+    "file": "data/gaia_dr3_characterization/epochs_g.csv",
+    "sha256": "5055cf8e999eacf0b1ca11efc03519020a74aa181e1f4ae2dee82d1f1fb54603",
+    "original_analysis_file": "Gaia DR3 ESA archive aggregate; adjacent ADQL query"
+  },
+  {
+    "file": "data/gaia_dr3_characterization/epochs_bp.csv",
+    "sha256": "734cb9ede2fc480e41b93ab34dfc180331f8665b9a4fef6121d03cd17df6ec24",
+    "original_analysis_file": "Gaia DR3 ESA archive aggregate; adjacent ADQL query"
+  },
+  {
+    "file": "data/gaia_dr3_characterization/epochs_rp.csv",
+    "sha256": "7133d0c43b0a01ce013399d8ad724601e0cc37b14ecf7c18fd6f6a4f129a57f3",
+    "original_analysis_file": "Gaia DR3 ESA archive aggregate; adjacent ADQL query"
+  },
+  {
+    "file": "data/gaia_dr3_characterization/baseline_g.csv",
+    "sha256": "58d6442ce9cab167865be07c443dcbae4d03919e448bad49efd55f06ddd274fd",
+    "original_analysis_file": "Gaia DR3 ESA archive aggregate; adjacent ADQL query"
+  },
+  {
+    "file": "data/gaia_dr3_characterization/magnitude_g.csv",
+    "sha256": "47f2a164b8fe9c6ec9f69bc8a118384bcfe9c3f007404e12675d3570372de760",
+    "original_analysis_file": "Gaia DR3 ESA archive aggregate; adjacent ADQL query"
+  },
+  {
+    "file": "data/examples/3470927899858715008.csv",
+    "sha256": "53a23144d1e67f29846282d61e706b16a1d4372d4edb78cd11ce8a993f6598d5",
+    "original_analysis_file": "Gaia DR3 DataLink DATAMODEL_STANDARD response; all rows retained"
+  },
+  {
+    "file": "data/examples/2003938801532007808.csv",
+    "sha256": "e39967507acd1e9135447f166548a796e05d72b8a03637398e8954fa7d814fc0",
+    "original_analysis_file": "Gaia DR3 DataLink DATAMODEL_STANDARD response; all rows retained"
+  },
+  {
+    "file": "data/examples/377735437313823104.csv",
+    "sha256": "001d7ea653d5c46fd7964e53776eb956b22b85ee6eb3ea6480d8e8591de583f6",
+    "original_analysis_file": "Gaia DR3 DataLink DATAMODEL_STANDARD response; all rows retained"
+  },
+  {
+    "file": "data/examples/2026653131220381824.csv",
+    "sha256": "2159d2edc0fd36e01de76337998f2d8c29256af8ba63e54cf10061d51ad0ac19",
+    "original_analysis_file": "Gaia DR3 DataLink DATAMODEL_STANDARD response; all rows retained"
+  },
+  {
+    "file": "data/examples/4613612951211823104.csv",
+    "sha256": "18975ddb6fbf340c5177a7f971977b36e2509feb52c202cd80c9167fdf09104f",
+    "original_analysis_file": "Gaia DR3 DataLink DATAMODEL_STANDARD response; all rows retained"
+  },
+  {
+    "file": "data/examples/1107980654748582144.csv",
+    "sha256": "c005f617a8f03cddba82d20ece5ac192b3e45b7053e3383f29cb2d5604017650",
+    "original_analysis_file": "Gaia DR3 DataLink DATAMODEL_STANDARD response; all rows retained"
   }
 ]

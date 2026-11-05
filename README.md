@@ -13,6 +13,9 @@ The notebook contains 54 processed Gaia measurements, ATLAS photometry, a high-s
 
 - Applies the original ATLAS cleaning and phase-folding recipe and exports the 50-bin Gaia/ATLAS comparison.
 - Maps all 11,754,237 DR3 epoch-photometry sources, highlighting the Andromeda survey, and introduces prior applications and expected DR4 products.
+- Shows full-sample epoch-count, baseline and magnitude histograms, split into GAPS and the rest of the sky.
+- Plots archive light curves for an RR Lyrae, a Cepheid, a GAPS young-star candidate, two short-period white dwarfs and Gaia-2b.
+- Documents the native BJD_TCB convention, TDB conversion, and CCD versus FoV integration times.
 - Remeasures Gaia timings in three seasons containing 20, 19, and 15 measurements, with free seasonal shifts relative to an ephemeris fitted to the 12 non-Gaia epochs.
 - Examines profile likelihoods, exposure averaging, and waveform sensitivity, then compares O–C diagrams and conditional period-derivative uncertainties before and after adding the new Gaia timings.
 

@@ -1,0 +1,7 @@
+band,population,n_sources,median_selected_epochs,missing_summary,zero_selected
+g,GAPS,1257319,37.0,0,2
+g,Rest of sky,10496918,45.0,0,0
+bp,GAPS,1257319,35.0,14835,111
+bp,Rest of sky,10496918,41.0,5953,21
+rp,GAPS,1257319,36.0,13763,723
+rp,Rest of sky,10496918,42.0,5801,72

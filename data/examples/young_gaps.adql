@@ -1,0 +1,1 @@
+SELECT TOP 12 c.source_id,c.best_class_name,c.best_class_score,g.ra,g.dec,g.phot_g_mean_mag,g.in_andromeda_survey FROM gaiadr3.vari_classifier_result AS c JOIN gaiadr3.gaia_source AS g ON c.source_id=g.source_id WHERE c.best_class_name='YSO' AND g.in_andromeda_survey='true' ORDER BY c.best_class_score DESC

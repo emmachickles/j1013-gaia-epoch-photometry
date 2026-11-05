@@ -1,0 +1,1 @@
+SELECT FLOOR(v.mean_mag_g_fov/0.5) AS bin_value, g.in_andromeda_survey, COUNT(*) AS n_sources FROM gaiadr3.vari_summary AS v JOIN gaiadr3.gaia_source AS g ON v.source_id=g.source_id WHERE g.has_epoch_photometry='true' GROUP BY bin_value, g.in_andromeda_survey

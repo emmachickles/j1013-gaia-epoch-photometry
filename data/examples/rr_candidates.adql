@@ -1,0 +1,1 @@
+SELECT TOP 8 r.source_id, r.pf, r.epoch_g, r.peak_to_peak_g, g.phot_g_mean_mag FROM gaiadr3.vari_rrlyrae AS r JOIN gaiadr3.gaia_source AS g ON r.source_id=g.source_id WHERE r.pf BETWEEN 0.4 AND 0.8 AND g.phot_g_mean_mag BETWEEN 10 AND 14 ORDER BY r.peak_to_peak_g DESC
